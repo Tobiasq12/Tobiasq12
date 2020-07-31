@@ -1,0 +1,5 @@
+RegisterNetEvent("omni:announcement")
+AddEventHandler("omni:announcement", function(message)
+    TriggerEvent("gd_utils:notify", message)
+    TriggerEvent("chatMessage", "^2" .. message)
+end)
